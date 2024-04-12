@@ -5,6 +5,74 @@
   text-align: center;
 }
 
+body {
+  background: linear-gradient(to bottom, #242424 0%, #000000 100%);
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.student-card {
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  height: 55px;
+  padding: 1em;
+  margin: 1em;
+  transition: background-color 0.3s ease; 
+}
+
+.student-card:hover {
+  background-color: #96df80; 
+}
+
+.student-name {
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.student-details {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #ffcc00; 
+  color: #242424; 
+  border-radius: 20px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.student-nickname {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.App-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.random-student {
+  flex: 1;
+  overflow: auto;
+  margin-left: 50px;
+}
+
+.App-logo{
+  height: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s ease;
+}
+
+.App-logo:hover {
+  transform: rotate(360deg); 
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,6 +84,15 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+button{
+  background-color: #686565 !important;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049 !important;
 }
 
 @keyframes logo-spin {
